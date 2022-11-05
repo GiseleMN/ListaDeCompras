@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Lista de Compras</title>
+    </head>
+
+    <body class="bg-slate-300 flex items-center justify-center ">
+
+        <section class="w-9/12 flex items-center justify-center flex-col  h-3/4 mt-32 ">
+
+            <h1
+                class="w-3/4 max-w[370px] bg-white py-2 px-4 rounded shadow text-center text-sky-400 decoration-gray-400 underline text-xl">
+                Lista de compras
+            </h1>
+
+            <div class="w-3/4 max-w[370px] mx-auto">
+                <form class="bg-white py-6 px-4 rounded shadow mt-5">
+                    <div class="w-full">
+                        <input id="entradaValor" class="mt-2 py-2 p-3 flex bg-gray-200 items-center rounded w-full"
+                            placeholder="Adicionar Item">
+
+                    </div>
+                    <button class="mt-2 py-2 flex items-center justify-center bg-blue-300 rounded w-full">
+                        Adicionar
+                    </button>
+                </form>
+                <ul id="respostaValor" class="mt-4 border border-gray-200 rounded overflow-hidden shadow">
+                    <li
+                        class="px-4 py-2 bg-white hover:bg-sky-100 hover:text-sky-900 border-b last:border-none border-gray-200 transition-all duration-300 ease-in-out flex justify-between">
+                        <span>Item</span><button class="text-red-700 delete">X</button>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
